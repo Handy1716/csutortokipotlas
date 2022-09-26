@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout">
+
+
+    <EditText
+        android:id="@+id/beker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/nBGomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/beker"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15sp"
+        android:background="@color/purple_500"
+        android:text="Nagy betűs szöveg" />
+
+    <Button
+        android:id="@+id/kBGomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nBGomb"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15sp"
+        android:background="@color/purple_500"
+        android:text="Kis betős szöveg" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Színváltás"
+        android:layout_below="@+id/kBGomb"
+        android:layout_centerInParent="true"
+        android:id="@+id/szinvaltoG"
+        android:layout_marginTop="15sp"
+        android:background="@color/purple_500"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teszt szöveg"
+        android:id="@+id/szinvaltoSz"
+        android:layout_below="@+id/szinvaltoG"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginTop="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/szinvaltoG"
+        android:text="random szovegecske"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+</RelativeLayout>
